@@ -2,9 +2,11 @@ import React, { useEffect, useState } from 'react';
 import { View, Text, StyleSheet, Image, ScrollView, TouchableOpacity } from 'react-native';
 import { Card } from '@rneui/themed';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import { useRoute } from '@react-navigation/native';
 
-const CartScreen = ({ route }) => {
-  const { cartItems, setCartItems } = route.params;
+const CartScreen = () => {
+    const route = useRoute();
+    const { cartItems, setCartItems } = route.params;
 
   // Function to remove an item from the cart
   const removeFromCart = async (itemId) => {

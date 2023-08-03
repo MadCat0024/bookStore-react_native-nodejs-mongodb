@@ -7,10 +7,11 @@ import {
   faAddressBook,
   faArrowRightFromBracket,
   faShoppingCart,
+  faMagnifyingGlass
 } from '@fortawesome/free-solid-svg-icons';
 import HomeScreen from './tab/home';
 import List from './tab/list';
-import Author from './tab/author';
+import Search from './tab/search';
 import LogOut from './tab/logout';
 import CartScreen from './tab/cartScreen';
 
@@ -48,13 +49,13 @@ const Tab = () => {
           }}
         />
         <BottomTab.Screen
-          name='author'
-          component={Author}
+          name='search'
+          component={Search}
           options={{
             tabBarIcon: ({ color, size }) => (
-              <FontAwesomeIcon icon={faAddressBook} color={color} size={size} />
+              <FontAwesomeIcon icon={faMagnifyingGlass} color={color} size={size} />
             ),
-            tabBarLabel: 'Tác giả',
+            tabBarLabel: 'Tìm kiếm',
             tabBarLabelStyle: {
               fontSize: 14,
             },

@@ -39,8 +39,6 @@ const App = () => {
     <NavigationContainer>
     <Stack.Navigator screenOptions={{headerShown: false}}>
           <Stack.Screen name="tab" component={Tab} />
-{/* 
-          <Stack.Screen name="home" component={HomeScreen} /> */}
           <Stack.Screen name="loanding" component={LoadingScreen} />
           <Stack.Screen name="login" component={LoginScreen} />
           <Stack.Screen name="register" component={RegisterScreen} />
@@ -48,22 +46,6 @@ const App = () => {
   </NavigationContainer>
   )
 }
-{/* {
-        isLoggedIn == null ?(
-          <>
-          <Stack.Group>
-            <Stack.Screen name="loanding" component={LoadingScreen} />
-          </Stack.Group>
-          </>
-        ) :
-        isLoggedIn == true ? (
-        <>
-          <Stack.Group>
-            <Stack.Screen name="home" component={HomeScreen} />
-  
-          </Stack.Group>        
-        </>
-      ) : ( */}
 export default App
 
  

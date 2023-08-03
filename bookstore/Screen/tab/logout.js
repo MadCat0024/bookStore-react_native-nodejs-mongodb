@@ -35,7 +35,7 @@ useEffect(()=>{
   }
   return (
     <>
-       <Text>Xin chào</Text>   
+       {/* <Text>Xin chào</Text>    */}
        <Button mode="contained"
         style={{marginLeft:18,marginRight:18,marginTop:18}}
         onPress={() => handleLogout()}>
